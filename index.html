@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        background-color: #ffe79a;
+        border: 2px solid #d4ac2b;
+        padding: 5px 20px;
+        border-radius: 5px;
+      }
+      .cards {
+        display: none;
+      }
+      .card {
+        background-color: #e7c859;
+        border: 2px solid #d0b34a;
+        padding: 25px 50px;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get Pikachu</h1>
+      <button id="getData">Get!</button>
+      <div class="cards">
+        <div class="card">
+          <div class="title">
+            <p id="number"></p>
+            <span>:</span>
+            <span id="name"></span>
+          </div>
+          <img src="" />
+          <p>Type: <span id="type"></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
